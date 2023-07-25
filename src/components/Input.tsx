@@ -1,5 +1,15 @@
 import React from 'react';
 
+interface Input {
+  type: string;
+  labelText: string;
+  placeholder: string;
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+  name: string;
+  value: string;
+  required: boolean;
+}
+
 const Input = ({
   type,
   labelText,
@@ -8,7 +18,7 @@ const Input = ({
   name,
   value,
   required,
-}) => {
+}: Input) => {
   return (
     <div>
       <label className="" htmlFor="">

@@ -18,8 +18,8 @@ const GeneralInfo = () => {
     e.preventDefault();
   };
 
-  const handleChange = (event: Event) => {
-    const target = event.target as HTMLInputElement;
+  const handleChange = (e: React.ChangeEvent) => {
+    const target = e.target as HTMLInputElement;
     const value = target.value;
     const targetName = target.name;
 
