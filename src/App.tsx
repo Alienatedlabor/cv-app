@@ -14,7 +14,9 @@ function App() {
           type={'text'}
           labelText={'First Name: '}
           value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setInputValue(e.target.value)
+          }
         />
       </section>
       <section></section>
