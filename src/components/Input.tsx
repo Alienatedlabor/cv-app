@@ -4,7 +4,7 @@ interface Input {
   type: string;
   labelText: string;
   placeholder: string;
-  onChange: React.ChangeEventHandler<HTMLInputElement>;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   name: string;
   value: string;
   required: boolean;

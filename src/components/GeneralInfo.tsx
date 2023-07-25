@@ -14,18 +14,16 @@ const GeneralInfo = () => {
     phoneNumber: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
   };
 
-  const handleChange = (e: React.ChangeEvent) => {
-    const target = e.target as HTMLInputElement;
-    const value = target.value;
-    const targetName = target.name;
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, name } = e.target;
 
     setFormState((formState) => ({
       ...formState,
-      [targetName]: value,
+      [name]: value,
     }));
     console.log(formState);
   };
