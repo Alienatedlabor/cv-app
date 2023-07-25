@@ -1,8 +1,14 @@
-import React, { FormEvent, useState } from 'react';
+import React, { useState } from 'react';
 import Input from './Input';
 
+interface GeneralInfoObject {
+  fullName: string;
+  emailAddress: string;
+  phoneNumber: number | string;
+}
+
 const GeneralInfo = () => {
-  const [formState, setFormState] = useState({
+  const [formState, setFormState] = useState<GeneralInfoObject>({
     fullName: '',
     emailAddress: '',
     phoneNumber: '',
@@ -12,8 +18,8 @@ const GeneralInfo = () => {
     e.preventDefault();
   };
 
-  const handleChange = (event) => {
-    const target = event.target;
+  const handleChange = (event: Event) => {
+    const target = event.target as HTMLInputElement;
     const value = target.value;
     const targetName = target.name;
 
