@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface Input {
+interface InputProps {
   type: string;
   labelText: string;
   placeholder: string;
@@ -18,7 +18,7 @@ const Input = ({
   name,
   value,
   required,
-}: Input) => {
+}: InputProps) => {
   return (
     <div>
       <label className="" htmlFor="">
