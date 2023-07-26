@@ -1,5 +1,6 @@
 import './App.css';
-import EmploymentHistory from './components/Employment';
+import Education from './components/Education';
+import EmploymentHistory from './components/EmploymentHistory';
 import GeneralInfo from './components/GeneralInfo';
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
           <section className=" flex flex-col justify-center">
             <EmploymentHistory />
           </section>
-          <section className=" flex flex-col justify-center"></section>
+          <section className=" flex flex-col justify-center">
+            <Education />
+          </section>
         </section>
         <section className="flex flex-col">CV</section>
       </div>
