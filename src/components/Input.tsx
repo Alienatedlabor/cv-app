@@ -20,7 +20,7 @@ const Input = ({
   required,
 }: InputProps) => {
   return (
-    <div>
+    <div className="flex justify-center items-center">
       <label className="" htmlFor="">
         {labelText}
       </label>

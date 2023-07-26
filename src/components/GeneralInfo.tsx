@@ -29,9 +29,9 @@ const GeneralInfo = () => {
   };
 
   return (
-    <section>
+    <section className="flex flex-col items-center">
       <h1>General Information</h1>
-      <form action="">
+      <form className="flex flex-col" action="">
         <Input
           placeholder={'Enter Full Name'}
           type={'text'}
